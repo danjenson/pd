@@ -1,0 +1,33 @@
+---
+title: "stats.rmd"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## Load Library
+```{r}
+if("psych" %in% rownames(installed.packages()) == FALSE) {
+  install.packages("psych")
+}  
+library(psych) 
+```
+## Stats
+```{r}
+files <- list.files("/Users/ppadmanabhan/Documents/PMMI/pd/data/PPMI", pattern="*.csv", full.names=T, recursive=FALSE)
+lapply(files, function(x) {
+  df <- read.csv(file=x, header=TRUE, sep=",")
+  print(paste("File: ", basename(x)))
+  print("Headers: ")
+  print(colnames(df))
+  print("")
+  print("Rows: ")
+  print(nrow(df))
+  print("Columns:")
+  print(ncol(df))
+  print("Stats:")
+  print(summary(df[sapply(df, is.numeric)]))
+})
+```
+
