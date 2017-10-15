@@ -1,0 +1,3 @@
+"REC_ID","F_STATUS","PATNO","EVENT_ID","PAG_NAME","AESEQ","AETERM","FOLLOWBY","FOLLOWDT","STOPDT","STOPEST","AESTBLCH","COMM","ORIG_ENTRY","LAST_UPDATE","QUERY","SITE_APRV"
+"426949901","S","1021","FNL","AEFU","1.000","STOMACH AILMENT","3","02/2014","02/2014","ACT","","Unrelated to LP","02/2014","2015-06-12 06:31:45.0","","02/2014"
+"443864201","S","1217","FNL","AEFU","1.000","HEADACHE","","04/2014","04/2014","ACT","","Subject had a moderate headache but did not report it to tresearch staff until T01 call on 08Apr2014.","06/2014","2015-06-12 06:39:22.0","","06/2014"
